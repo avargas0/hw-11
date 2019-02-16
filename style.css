@@ -1,0 +1,145 @@
+html {
+    position: relative;
+    min-height: 100%;
+    background-color: #D6DBDF;
+} */
+
+body {
+    margin-bottom: 150px;
+    background-color: #f1f1f1;
+}
+  
+.navbar-default .navbar-brand {
+    color: #FDFEFE;
+}
+
+.col-md-4 {
+    float: none !important
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 5px;
+    border: 1px solid transparent;
+}
+  
+.navbar-brand {
+    font-size: 18px; 
+    font-weight: bold; 
+    border: 2px solid #48C9B0;  
+    background:  #48C9B0;  
+}
+
+.row {
+    margin-right: -1px;
+    margin-left: -1px;
+    display: inline-block;
+    width: 65%;
+}
+
+.panel.panel-default {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.panel-formatting {
+    color:#48C9B0;  
+    text-align: center;
+    font-size: 24px; 
+    margin: 5px 5px 5px;
+    border-bottom: 1px solid #48C9B0;
+    font-weight: bold;
+}
+
+.panel.heading {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.comparison.image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#center {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    font-weight: bold;
+    font-size: 28px; 
+    color:#48C9B0;  
+}
+  
+#center_img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%;
+}
+  
+#float{
+    margin: 5px;
+    vertical-align: top;
+}
+  
+#call {
+     border: 3px solid #48C9B0; 
+}
+  
+p {
+    margin: 10px 10px 10px;
+}
+  
+.footer {
+    background:  #48C9B0;  
+    /* position: relative; */
+    min-height: 50px;
+    border-top: 3px solid  #48C9B0;
+    text-align: center;
+    color: #FDFEFE;
+    font-weight: bold;
+}
+  
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}*/ */
+
+ 
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+[class*="col-"] {
+width: 100%;
+}
+} 

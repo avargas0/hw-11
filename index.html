@@ -1,15 +1,84 @@
-!<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
-</head>
+ <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+ <title>Weather Data</title>
+  <!-- Bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+ </head>
+
+
 <body>
-    <h1>HelloWorld</h1>
-    <a href='./test.html'>Click this link</a>
+  <!-- Create navigation bar -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Latitude</a>
+    </div>
+
+  <!-- Nav bar links -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="temp.html">Max Temperature</a></li>
+            <li><a href="humidity.html">Humidity</a></li>
+            <li><a href="cloudiness.html">Cloudiness</a></li>
+            <li><a href="windiness.html">Wind Speed</a></li>
+          </ul>
+          <li><a href="comparison.html">Comparison</a></li>
+          <li><a href="data.html">Data</a></li>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- Creates the Overall Grid -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="panel panel-default">
+          <div class="panel-heading" id="center">Summary: Latitude vs. X</div>
+            <div class="panel-body"></div>
+              <img id="float" id="center" src="Fig1.png" alt="City Latitude vs. Max Temperature map" height="250" width="="300>
+                <hr>
+                  <p>The purpose of this page was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                    <br>
+                  <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+
+                  </div> <!-- /.panel body collapse -->
+                </div> <!-- /.panel collapse -->
+              </div> <!-- /.col-md-8 collapse -->
+            <div class="col-md-4 inline-block">
+              <div class="panel panel-default">
+                <div class="panel-heading" id="center">Visualizations</div>
+                  <div class="panel-body" id="center">
+                    <a href="temp.html"><img src="Fig1.png" alt="City Latitude vs. Max Temperature map" height="150" width="180"></a>
+                    <a href="humidity.html"><img src="Fig2.png" alt="City Latitude vs. Humidity map" height="150" width="180"></a>
+                    <a href="cloudiness.html"><img src="Fig3.png" alt="City Latitude vs. Cloudiness map" height="150" width="180"></a>
+                    <a href="windiness.html"><img src="Fig4.png" alt="City Latitude vs. Wind Speed map" height="150" width="180"></a>
+              </div>
+            </div> <!-- /.panel collapse -->
+          </div> <!-- /.col-md-4 collapse -->
+        </div> <!-- /.row collapse -->
+      </div> <!-- /.container collapse -->
+
+  <footer class="footer">
+    <p>2018-2019 | UNC Data Analytics Bootcamp | Amy Vargas-Tonsi</p>
+  </footer>
 </body>
 </html>
